@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    list-style: none;
+    text-decoration: none;
+}
+
+.page-container{
+    padding: 3em;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 100%;
+}
+
+.logo{
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    font-family: 'Beth Ellen', cursive;
+    cursor: pointer;
+}
+
+.form{
+    width: 70vh;
+    padding-bottom: 3.5em;
+}
+
+.grid-span{
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-span-two{
+    grid-column: span 3;
+}
+
+.logo-container{
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+}
+
+.header-container{
+    padding-bottom: 2em;
+    line-height: 30px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-container h1{
+    padding-bottom: 0.3em;
+    text-align: center;
+}
+.header-container p {
+    font-size: 1em;
+    /* gap: 2em; */
+    font-size: 1em;
+}
+.header-container span{
+    font-size: 1.5em;
+    color: black;
+    padding-left: 1em;
+}
+
+.btn-container{
+    padding-bottom: 1.5em;
+}
+
+.header-btn span{
+    position: relative;
+    right: 1.8em;
+}
+
+.header-container p{
+    color: rgb(100, 98, 98);
+}
+
+.header-btn{
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 100px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.horizontal-line{
+    text-align: center;
+}
+
+.horizontal-line p{
+    color: rgb(16, 16, 16);
+    font-family: 'Beth Ellen', cursive;
+    font-size: 1.5em;
+}
+
+
+form{
+    padding-top: 1.5em;
+}
+
+.password-input, .username-input{
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 100px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+.password-input-two{
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 15px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.label-container{
+    padding: 0.8em 0;
+}
+
+.sign{
+    color: rgb(0, 98, 255);
+    padding:0 0.2em;
+}
+
+.verification-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.verification-container-two{
+    display: flex;
+    padding: 1em;
+}
+
+.lower-text p span a{
+    padding-left: 0.3em;
+}
+
+.verification-container-two p a{
+    padding-left: 0.2em;
+    color: rgb(0, 98, 255);
+}
+
+.verification-container p a{
+    color: rgb(0, 98, 255);
+}
+
+.text{
+    padding-left: 0.8em;
+}
+
+.main-btn{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.login{
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 100px;
+    font-size: 18px;
+    background: rgb(255, 234, 0);
+    /* background: radial-gradient(circle, rgba(232,174,238,1) 0%, rgba(230,233,148,1) 100%);  */
+    border: none;
+    color: black;
+}
+
+  .lower-text{
+    padding: 1em 0;
+    word-spacing: 1px;
+  }
+
+  .lower-text p a{
+    color: rgb(0, 98, 255);
+  }
+
+  .last-text{
+    padding-top: 8em;
+  }
+
+  .last-text p{
+    color: grey;
+  }
+
+  .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container{
+    height: 100%;
+    position: relative;
+}
+.video-container{
+    height: 100%;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 900px){
+    .content{
+        display: block;
+    }
+    .grid-span-one{
+       grid-column: span 7;
+    }
+    .hidden{
+        display: none;
+    }
+    .last-text, .lower-text{
+        text-align: center;
+    }
+}

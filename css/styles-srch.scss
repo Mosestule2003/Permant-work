@@ -1,0 +1,69 @@
+@import compass
+
+$gray: #ddd
+$grayDark: #aaa
+
+$button-size: 44px
+$input-width: 200px
+
+body
+  padding: 10px 20px
+  background-color: #343434
+  color: #fff
+.center
+  padding: 60px
+  max-width: 400px
+  margin-left: 200px
+
+
+// -- begin --
+  
+.srch-form
+  position: relative
+  width: $button-size
+
+.srch-wrapper
+  position: absolute
+  top: 0
+  right: 0   // expands to left
+  // left: 0 // expands to right
+  width: $button-size
+  height: 40px
+  +transition(all .3s linear)
+
+  &.open
+    width: 200px
+  
+.srch-input
+  position: relative
+  background-color: transparent
+  height: $button-size
+  line-height:  26px
+  padding: 5px 10px 5px 32px // ~ 40px wide
+  box-sizing: border-box
+  border: 2px solid $gray
+  border-radius: 100px
+  margin: 0
+  width: 100%
+  &:focus
+    outline: none
+    border-color: $grayDark
+
+.srch-button
+  position: absolute
+  top: 0
+  left: 0
+  border: 0
+  padding: 0
+  margin: 0
+  background-color: transparent //rgba(255,0,0,.2)
+  color: $gray
+  width: $button-size
+  height: $button-size
+  text-align: center
+  &:focus
+    outline: none
+
+.srch-input:focus + .srch-button,
+.srch-button:hover
+  color: $grayDark
